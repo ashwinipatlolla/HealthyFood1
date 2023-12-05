@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Heading -->
+    <TextView
+        android:id="@+id/headingTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_colour"
+        android:paddingVertical="20dp"
+        android:text="Dashboard"
+        android:textAlignment="center"
+        android:textColor="#546E7A"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- GridLayout for the Dashboard -->
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:alignmentMode="alignMargins"
+        android:columnCount="2"
+        android:columnOrderPreserved="false"
+        android:rowCount="3"
+        app:flow_verticalAlign="center"
+        app:layout_constraintBottom_toTopOf="@+id/logoutButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headingTextView">
+
+        <!-- FrameLayouts for each option -->
+        <!-- Example for Healthy Recipe -->
+        <FrameLayout
+            android:id="@+id/recipe"
+            android:layout_width="150dp"
+            android:layout_height="110dp"
+            android:layout_margin="8dp"
+            android:layout_columnWeight="1"
+            android:background="@color/app_colour"
+            android:layout_gravity="fill_horizontal">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:src="@drawable/food_svgrepo_com" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:text="Healthy Recipe"
+                android:textAlignment="center"
+                tools:ignore="RtlCompat" />
+        </FrameLayout>
+        <!-- Diet Calculator -->
+        <FrameLayout
+            android:layout_width="150dp"
+            android:layout_height="110dp"
+            android:id="@+id/dietcalc"
+            android:layout_gravity="fill_horizontal"
+            android:layout_margin="8dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:src="@drawable/pizza" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:text="Diet Calculator"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textAlignment="center"
+                tools:ignore="RtlCompat" />
+        </FrameLayout>
+
+        <!-- Meal Planner -->
+        <FrameLayout
+            android:layout_width="150dp"
+            android:layout_height="110dp"
+            android:id="@+id/mealplanner"
+            android:layout_margin="8dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:src="@drawable/food_and_drink_svgrepo_com_2" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:text="Meal Planner"
+                android:textAlignment="center"
+                tools:ignore="RtlCompat" />
+        </FrameLayout>
+
+        <!-- Healthy Store -->
+        <FrameLayout
+            android:layout_width="150dp"
+            android:id="@+id/store"
+            android:background="@color/app_colour"
+            android:layout_height="110dp"
+            android:layout_margin="8dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:src="@drawable/store_homepage_home_svgrepo_com" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:text="Healthy Store"
+                android:textAlignment="center"
+                tools:ignore="RtlCompat" />
+        </FrameLayout>
+
+        <!-- Community -->
+        <FrameLayout
+            android:layout_width="150dp"
+            android:layout_height="110dp"
+            android:id="@+id/comm"
+            android:background="@color/app_colour"
+            android:layout_margin="8dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:src="@drawable/people_who_care_about_people_who_cough_without_wearing_a_mask_svgrepo_com" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:text="Community"
+
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textAlignment="center"
+                tools:ignore="RtlCompat" />
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:layout_width="150dp"
+            android:layout_height="110dp"
+            android:id="@+id/foods"
+            android:layout_margin="8dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:src="@drawable/fooddrinkl" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:text="My Foods"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textAlignment="center"
+                tools:ignore="RtlCompat" />
+        </FrameLayout>
+
+
+
+    </GridLayout>
+
+
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "425497124389",
+    "firebase_url": "https://healthyfood-44dbb-default-rtdb.firebaseio.com",
+    "project_id": "healthyfood-44dbb",
+    "storage_bucket": "healthyfood-44dbb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:425497124389:android:022494c5bd642cbeaee9cc",
+        "android_client_info": {
+          "package_name": "uk.ac.tees.mad.w9601599"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4Zgpuc2Bc0uuly1JiX3upSlcsiEeoqHw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
